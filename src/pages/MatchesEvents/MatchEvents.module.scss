@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-weight: bold;
+  color: #989898;
+}
+
+.tableWrapper {
+  width: 100%;
+  max-width: 650px;
+  min-width: 400px;
+}
+
+.matchesTable {
+  position: relative;
+  border: 17px solid #989898;
+  overflow: hidden;
+
+  > div {
+    &:not(last-child) {
+      border-bottom: 1px solid #989898;
+    }
+  }
+}

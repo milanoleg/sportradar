@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
+
+.home,
+.away {
+  display: flex;
+  width: 28%;
+}
+
+.home {
+  justify-content: right;
+}
+
+.homeFlag {
+  margin-left: 10px;
+}
+
+.scoreCount {
+  width: 44%;
+  text-align: center;
+}
+
+.counter {
+  padding: 1px 15px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #02a5e1;
+}
+
+.awayFlag {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3e3e3e;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.flagImage {
+  width: 30px;
+}
+
+.flipX {
+  animation: 1.5s anim-flipX ease;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
